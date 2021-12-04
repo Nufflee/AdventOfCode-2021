@@ -8,6 +8,7 @@ fn main() {
     let input = std::fs::read_to_string("input/input.txt").unwrap();
     let commands = input.lines().map(|line| line.parse::<Command>().unwrap());
 
+    // TODO: Implement a solution using linear algebra (nalgebra or something)
     {
         let Location { position, depth } = part1::compute(commands.clone());
 
