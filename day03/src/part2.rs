@@ -23,6 +23,7 @@ pub fn calculate_life_support_rating(report: &[u32], bit_count: usize) -> u32 {
     let mut oxygen_generator_rating = None;
     let mut co2_scrubber_rating = None;
 
+    // TODO: Compress these two for loops
     for bit_index in (0..bit_count).rev() {
         let mut one_count = 0;
 
